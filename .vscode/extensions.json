@@ -3,6 +3,9 @@
     "nrwl.angular-console",
     "angular.ng-template",
     "ms-vscode.vscode-typescript-tslint-plugin",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "christian-kohler.path-intellisense",
+    "ban.spellright",
+    "johnpapa.angular-essentials"
   ]
 }

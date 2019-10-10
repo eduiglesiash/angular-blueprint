@@ -1,11 +1,10 @@
 {
-    "spellright.language": [
-        "en",
-        "es"
-    ],
-    "spellright.documentTypes": [
-        "markdown",
-        "latex",
-        "plaintext"
-    ]
+  "spellright.language": ["en", "es"],
+  "spellright.documentTypes": ["markdown", "latex", "plaintext"],
+  "workbench.colorCustomizations": {
+    "editorError.foreground": "#f5f0f0",
+    "editorWarning.foreground": "#eff0e3",
+    "editorInfo.foreground": "#eaf3f6"
+  },
+  "workbench.iconTheme": "material-icon-theme"
 }
