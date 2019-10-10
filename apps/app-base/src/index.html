@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
-    <title>AppBase</title>
+    <title>Angular-Blueprint: AppBase</title>
     <base href="/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- SEO -->
+    <meta name="description"
+          content="Blueprint for enterprise web aplications made with Angular" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type"
+          content="website" />
+    <meta property="og:url"
+          content="https://angular.builders/" />
+    <meta property="og:title"
+          content="Angular Blueprint" />
+    <meta property="og:description"
+          content="Create web apps with full capabilities: PWA, SSR" />"
+    <!-- Twitter -->
+    <meta property="twitter:card"
+          content="summary_large_image" />
+    <meta property="twitter:url"
+          content="https://angular.builders/" />
+    <meta property="twitter:title"
+          content="Angular Blueprint" />
+    <meta property="twitter:description"
+          content="Create web apps with full capabilities: PWA, SSR" />"
+    <!-- Style  -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+    <link rel="icon"
+          type="image/x-icon"
+          href="favicon.ico" />
+    <!-- Analytics -->
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-142672884-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'UA-142672884-1', { 'send_page_view': false });
+    </script>
   </head>
+
   <body>
     <abs-root></abs-root>
   </body>
+
 </html>
