@@ -1,6 +1,17 @@
 {
   "name": "angular-blueprint",
   "version": "0.0.0",
+  "description": "Blueprint for enterprise Angular web applications",
+  "author": {
+    "name": "Alberto Basalo",
+    "email": "info@angular.builders",
+    "url": "https://twitter.com/albertobasalo"
+  },
+  "homepage": "https://angular.builders",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngularBuilders/angular-blueprint.git"
+  },
   "license": "MIT",
   "scripts": {
     "ng": "ng",

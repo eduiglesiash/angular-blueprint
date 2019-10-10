@@ -1,84 +1,47 @@
-# AngularBlueprint
+# Angular Blueprint
 
-This project was generated using [Nx](https://nx.dev).
+Base repository for Profesional Angular Applications
 
-<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
+## Getting Started
 
-🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
+Clone or fork to use like a template for creating yours.
 
-## Quick Start & Documentation
+Read the [documentation](https://angularbuilders.github.io/angular-blueprint/).
 
-[Nx Documentation](https://nx.dev/angular)
+### Prerequisites
 
-[10-minute video showing all Nx features](https://nx.dev/angular/getting-started/what-is-nx)
+This is an Angular application. So you need to be familiar with  Node, TypeScript, npm or yarn.
 
-[Interactive Tutorial](https://nx.dev/angular/tutorial/01-create-application)
+### Installing
 
-## Adding capabilities to your workspace
+```bash
+yarn # using yarn
+npm i # or using npm
+```
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+## Built With
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+* [Angular](https://angular.io/)
+* [NX](https://nx.dev/) by [Nrwl](https://nrwl.io/)
 
-Below are some plugins which you can add to your workspace:
 
-- [Angular](https://angular.io)
-  - `ng add @nrwl/angular`
-- [React](https://reactjs.org)
-  - `ng add @nrwl/react`
-- Web (no framework frontends)
-  - `ng add @nrwl/web`
-- [Nest](https://nestjs.com)
-  - `ng add @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `ng add @nrwl/express`
-- [Node](https://nodejs.org)
-  - `ng add @nrwl/node`
+## Contributing
 
-## Generate an application
+Please for details on our code of conduct, and the process for submitting pull requests to us contact with.
 
-Run `ng g @nrwl/angular:app my-app` to generate an application.
+## Authors
 
-> You can use any of the plugins above to generate applications as well.
+* **Alberto Basalo** - *Founder* - [AlbertoBasalo](https://github.com/AlbertoBasalo)
 
-When using Nx, you can create multiple applications and libraries in the same workspace.
+Do you want to be part of [contributors](https://github.com/angularbuilders/angular-blueprint/contributors) who participated in this project?
 
-## Generate a library
+## License
 
-Run `ng g @nrwl/angular:lib my-lib` to generate a library.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-> You can also use any of the plugins above to generate libraries as well.
+## Acknowledgments
 
-Libraries are sharable across libraries and applications. They can be imported from `@angular-blueprint/mylib`.
+* Angular community
 
-## Development server
 
-Run `ng serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng g component my-component --project=my-app` to generate a new component.
-
-## Build
-
-Run `ng build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `ng e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx dep-graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev/angular) to learn more.
