@@ -31,8 +31,7 @@
               "apps/app-base/src/manifest.webmanifest"
             ],
             "styles": [
-              "apps/app-base/src/styles.css",
-              "node_modules/mini.css/dist/mini-default.min.css"
+              "apps/app-base/src/styles.css"
             ],
             "scripts": []
           },
@@ -94,7 +93,10 @@
               "apps/app-base/tsconfig.app.json",
               "apps/app-base/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/app-base/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/app-base/**"
+            ]
           }
         },
         "test": {
@@ -128,8 +130,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/app-base-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/app-base-e2e/**"]
+            "tsConfig": [
+              "apps/app-base-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/app-base-e2e/**"
+            ]
           }
         }
       }
