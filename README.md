@@ -6,7 +6,7 @@ Base repository for Profesional Angular Applications
 
 Clone or fork to use like a template for creating yours.
 
-Read the [documentation](https://angularbuilders.github.io/angular-blueprint/).
+View the [running demo base app](https://angularbuilders.github.io/angular-blueprint/).
 
 ### Prerequisites
 
@@ -27,7 +27,7 @@ npm i # or using npm
 
 ## Contributing
 
-Please for details on our code of conduct, and the process for submitting pull requests to us contact with.
+Please for details on our code of conduct, and the process for submitting pull requests to us contact with:
 
 ## Authors
 
