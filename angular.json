@@ -30,9 +30,7 @@
               "apps/app-base/src/assets",
               "apps/app-base/src/manifest.webmanifest"
             ],
-            "styles": [
-              "apps/app-base/src/styles.css"
-            ],
+            "styles": [],
             "scripts": []
           },
           "configurations": {
