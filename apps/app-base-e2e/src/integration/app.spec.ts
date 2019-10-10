@@ -4,6 +4,6 @@ describe('app-base', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
-    getGreeting().contains('Welcome to app-base!');
+    getGreeting().contains('Welcome to Angular-Blueprint!');
   });
 });

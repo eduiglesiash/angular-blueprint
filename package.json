@@ -21,7 +21,6 @@
     "build": "ng build",
     "build:prod": "ng build --prod",
     "build:ghp": "ng build --prod --output-path docs/ --base-href https://angularbuilders.github.io/angular-blueprint/",
-    "clear": "rm ./docs -r",
     "deploy:ghp": "npm run build:ghp && npm run push",
     "push": "git add * && git commit -m 'pub' && git push",
     "test": "ng test",
