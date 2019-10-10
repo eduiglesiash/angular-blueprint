@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1570710208264,
+  "timestamp": 1570734600037,
   "index": "https://angularbuilders.github.io/angular-blueprint/index.html",
   "assetGroups": [
     {
@@ -10,14 +10,13 @@
       "urls": [
         "https://angularbuilders.github.io/angular-blueprint/favicon.ico",
         "https://angularbuilders.github.io/angular-blueprint/index.html",
-        "https://angularbuilders.github.io/angular-blueprint/main-es2015.75e85cb385d85a96c570.js",
-        "https://angularbuilders.github.io/angular-blueprint/main-es5.75e85cb385d85a96c570.js",
+        "https://angularbuilders.github.io/angular-blueprint/main-es2015.59a3b7cf197a018cb5ec.js",
+        "https://angularbuilders.github.io/angular-blueprint/main-es5.59a3b7cf197a018cb5ec.js",
         "https://angularbuilders.github.io/angular-blueprint/manifest.webmanifest",
         "https://angularbuilders.github.io/angular-blueprint/polyfills-es2015.25bfed26497f24d6d1d7.js",
         "https://angularbuilders.github.io/angular-blueprint/polyfills-es5.3ff796571eb9f406f768.js",
         "https://angularbuilders.github.io/angular-blueprint/runtime-es2015.e8a2810b3b08d6a1b6aa.js",
-        "https://angularbuilders.github.io/angular-blueprint/runtime-es5.e8a2810b3b08d6a1b6aa.js",
-        "https://angularbuilders.github.io/angular-blueprint/styles.c0f46a0974b40f9ea99b.css"
+        "https://angularbuilders.github.io/angular-blueprint/runtime-es5.e8a2810b3b08d6a1b6aa.js"
       ],
       "patterns": []
     },
@@ -34,7 +33,8 @@
         "https://angularbuilders.github.io/angular-blueprint/assets/icons/icon-384x384.png",
         "https://angularbuilders.github.io/angular-blueprint/assets/icons/icon-512x512.png",
         "https://angularbuilders.github.io/angular-blueprint/assets/icons/icon-72x72.png",
-        "https://angularbuilders.github.io/angular-blueprint/assets/icons/icon-96x96.png"
+        "https://angularbuilders.github.io/angular-blueprint/assets/icons/icon-96x96.png",
+        "https://angularbuilders.github.io/angular-blueprint/assets/styles.css"
       ],
       "patterns": []
     }
@@ -50,16 +50,16 @@
     "https://angularbuilders.github.io/angular-blueprint/assets/icons/icon-512x512.png": "7ea7689cbfda63f9bc9b13120ea3d4a4a1dec338",
     "https://angularbuilders.github.io/angular-blueprint/assets/icons/icon-72x72.png": "569ff8c806529d68eda15865dbe62ac306372973",
     "https://angularbuilders.github.io/angular-blueprint/assets/icons/icon-96x96.png": "da58a3ca8d4e04242a19a61834f83e01c657562b",
+    "https://angularbuilders.github.io/angular-blueprint/assets/styles.css": "02565e9e0b1e021ddcf5634d4a34b039a8b45c98",
     "https://angularbuilders.github.io/angular-blueprint/favicon.ico": "ecec14d30b0a48f643a5eff264e1bc78488a3c93",
-    "https://angularbuilders.github.io/angular-blueprint/index.html": "6966ea31d1d43b7f3428dff917a2c5f4099b0fa3",
-    "https://angularbuilders.github.io/angular-blueprint/main-es2015.75e85cb385d85a96c570.js": "3980d2c0149b131e25d1e327eab9873f5cab4c01",
-    "https://angularbuilders.github.io/angular-blueprint/main-es5.75e85cb385d85a96c570.js": "50fd468392bab94c930e5342361a1862f6b26167",
-    "https://angularbuilders.github.io/angular-blueprint/manifest.webmanifest": "47a10db492898eaa15939d048a88291f028151f7",
+    "https://angularbuilders.github.io/angular-blueprint/index.html": "fbb3a3c9866f71312d3b95811a84ecfb6ea063c6",
+    "https://angularbuilders.github.io/angular-blueprint/main-es2015.59a3b7cf197a018cb5ec.js": "616d414cc12a46bc091d61148b9f14a5703e73ac",
+    "https://angularbuilders.github.io/angular-blueprint/main-es5.59a3b7cf197a018cb5ec.js": "d27cbf7662f057c2d463c9abfc0cb8efd9bc1b96",
+    "https://angularbuilders.github.io/angular-blueprint/manifest.webmanifest": "e0417fd3a626196ba30df1321872db4ad8d5dac0",
     "https://angularbuilders.github.io/angular-blueprint/polyfills-es2015.25bfed26497f24d6d1d7.js": "faea66061c18a2e0d530c5ae61ec0f468336aec0",
     "https://angularbuilders.github.io/angular-blueprint/polyfills-es5.3ff796571eb9f406f768.js": "aa66f7927968019c00227246bc07d95b8e17ed82",
     "https://angularbuilders.github.io/angular-blueprint/runtime-es2015.e8a2810b3b08d6a1b6aa.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://angularbuilders.github.io/angular-blueprint/runtime-es5.e8a2810b3b08d6a1b6aa.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://angularbuilders.github.io/angular-blueprint/styles.c0f46a0974b40f9ea99b.css": "17d0f67e6c3a5abc6f0671898d4e50397373db9b"
+    "https://angularbuilders.github.io/angular-blueprint/runtime-es5.e8a2810b3b08d6a1b6aa.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c"
   },
   "navigationUrls": [
     {
