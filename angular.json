@@ -6,6 +6,10 @@
       "schematics": {
         "@nrwl/angular:component": {
           "inlineStyle": true
+        },
+        "@schematics/angular:component": {
+          "changeDetection": "OnPush",
+          "inlineStyle": true
         }
       },
       "root": "apps/app-base",
