@@ -4,7 +4,6 @@
 
 - Basic crud sample https://jsonbox.io/
 
-
 - Shell for initial load
 
 - Interceptors https://next.angular.io/cli/generate#interceptor-command
