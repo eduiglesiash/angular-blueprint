@@ -40,10 +40,6 @@ body {
     'Helvetica Neue', sans-serif;
   line-height: 1.5;
 
-  /* max-width: 800px; */
-  margin: 20px auto;
-  padding: 0 10px;
-
   color: var(--text-main);
   background: var(--background-body);
 
