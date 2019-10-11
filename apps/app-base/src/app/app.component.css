@@ -1,0 +1,50 @@
+article {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+article > section {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: row;
+}
+
+article > section > main {
+  flex: 1;
+  flex-direction: column;
+}
+
+article > section > nav,
+article > section > aside {
+  flex: 0 0 12em;
+}
+
+article > section > nav {
+  /* put the nav on the left */
+  order: -1;
+}
+
+article > header,
+article > footer {
+  flex: none;
+}
+
+article > footer {
+  background-color: crimson;
+}
+
+@media (min-width: 768px) {
+  article > section {
+    flex-direction: row;
+  }
+  article > section > main {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+  }
+  article > section > nav,
+  article > section > aside {
+    flex: 0 0 12em;
+  }
+}

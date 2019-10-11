@@ -18,6 +18,6 @@
 0. App Nx Angular app Cypress jest
 1. Home component
 2. PWA icons and auto update
-3. CSS reset https://minicss.org/docs
-4. Flex Layout https://github.com/fiatjaf/classless/tree/master/themes/dbyll
+3. CSS reset https://watercss.netlify.com/
+4. Flex Layout https://github.com/philipwalton/solved-by-flexbox
 

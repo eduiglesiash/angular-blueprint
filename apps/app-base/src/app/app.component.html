@@ -1,44 +1,31 @@
-<header>
-  <h1>{{ title }}!</h1>
-  <p>A base to build big web applications with Angular.</p>
-</header>
-<nav>
-  <ul>
-    <li>
-      <a href="https://academia-binaria.com/"
-         target="_blank">Blog tutorial Academia Binaria</a>
-    </li>
-    <li>
-      <a href="https://www.trainingit.es/curso-angular-basico/?promo=angular.builders">
-        Curso Online de Angular <i>Básico</i>.
-      </a>
-    </li>
-    <li>
-      <a href="https://www.trainingit.es/curso-angular-avanzado/?promo=angular.builders">
-        Curso Online de Angular <i>Avanzado</i>.
-      </a>
-    </li>
-  </ul>
-</nav>
-<main>
-  <article>
-    <h1>Welcome to {{ title }}!</h1>
-    <p>A base to build big web applications with Angular.</p>
-    <p><a href="https://github.com/angularbuilders/angular-blueprint"
-         target="_blank">Code</a> crafted with ♥ by</p>
-    <a href="https://angular.builders/"
-       target="_blank"><img src="./assets/angular.builders.png"
-           alt="Angular.Builders"
-           width="40%"
-           height="auto"></a>
-  </article>
+<article>
+  <header>
+    <abs-header [title]="title"></abs-header>
+  </header>
+  <section>
+    <main>
+      <h1>Welcome to {{ title }}!</h1>
+      <p>A base to build big web applications with Angular.</p>
+      <p><a href="https://github.com/angularbuilders/angular-blueprint"
+           target="_blank">Code
+        </a> crafted with ♥ by</p>
+      <a href="https://angular.builders/"
+         target="_blank"><img src="./assets/angular.builders.png"
+             alt="Angular.Builders"
+             width="40%"
+             height="auto"></a>
 
-  <router-outlet></router-outlet>
-</main>
-<aside>
-  <small>Aprender, programar, disfrutar, repetir.</small>
-</aside>
-<footer>
-  <small>Una iniciativa de <a href="https://www.linkedin.com/in/albertobasalo/"
-       target="blank">Alberto Basalo</a> para programadores y arquitectos de software.</small>
-</footer>
+      <router-outlet></router-outlet>
+    </main>
+    <nav>
+      <abs-nav [links]="links$ | async"></abs-nav>
+    </nav>
+    <aside>
+      <small>Aprender, programar, disfrutar, repetir.</small>
+    </aside>
+  </section>
+  <footer>
+    <small>Una iniciativa de <a href="https://www.linkedin.com/in/albertobasalo/"
+         target="blank">Alberto Basalo</a> para programadores y arquitectos de software.</small>
+  </footer>
+</article>

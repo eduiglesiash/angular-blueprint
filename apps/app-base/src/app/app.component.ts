@@ -1,16 +1,20 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { SwUpdate, UpdateAvailableEvent } from '@angular/service-worker';
+import { Observable } from 'rxjs';
+import { Link } from './core/models/link.interface';
 
 @Component({
   selector: 'abs-root',
   templateUrl: './app.component.html',
-  styles: []
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   public title = 'Angular-Blueprint';
-
-  constructor(private swUpdate: SwUpdate) {
+  public links$: Observable<Link[]>;
+  constructor(private swUpdate: SwUpdate, private http: HttpClient) {
     this.checkVersionUpdates();
+    this.loadLinks();
   }
 
   private checkVersionUpdates() {
@@ -32,5 +36,9 @@ export class AppComponent {
     if (confirm(msg)) {
       window.location.reload();
     }
+  }
+
+  private loadLinks() {
+    this.links$ = this.http.get<Link[]>('assets/links.json');
   }
 }
