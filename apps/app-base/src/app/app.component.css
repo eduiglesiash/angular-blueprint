@@ -30,10 +30,6 @@ article > footer {
   flex: none;
 }
 
-article > footer {
-  background-color: crimson;
-}
-
 @media (min-width: 768px) {
   article > section {
     flex-direction: row;
