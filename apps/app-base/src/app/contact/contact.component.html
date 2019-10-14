@@ -1,21 +1,27 @@
-<h1>Contact</h1>
-<form>
-  <legend>Contact</legend>
+<h1>Contact us.</h1>
+<ul>
+  <li><a href="https://medium.com/@albertobasalo71">Blog en medium</a></li>
+  <li><a href="https://twitter/albertobasalo/">Twitter: @albertobasalo</a></li>
+  <li><a href="http://eepurl.com/b3p7fb">Newsletter mensual</a></li>
+</ul>
+<form action="https://api.staticforms.xyz/submit"
+      method="post">
+  <input type="hidden"
+         name="accessKey"
+         value="3fbe594f-92ce-4135-a677-191d6f9fa5c3">
+  <input type="text"
+         name="honeypot"
+         style="display: none;">
+  <legend>Drop us a line and we will get in contact with you.</legend>
   <fieldset>
-    <label>Name:</label>
-    <input type="text">
-    <label>Email:</label>
-    <input type="email">
-    <label>Message:</label>
-    <input type="text">
+    <label for="name">Your name:</label>
+    <input id="name"
+           type="text">
+    <label for="email">Your email:</label>
+    <input id="email"
+           type="email">
+    <label for="message">Your message:</label>
+    <textarea id="message"></textarea>
   </fieldset>
-  <button>Send</button>
-</form>
-<form>
-  <legend>Newsletter subscription</legend>
-  <fieldset>
-    <label>Email:</label>
-    <input type="email">
-  </fieldset>
-  <button>Susbscribe</button>
+  <button type="submit">Send</button>
 </form>
