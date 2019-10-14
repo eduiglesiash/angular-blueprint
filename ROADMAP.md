@@ -21,6 +21,7 @@
 5. Home page
 6. Nav and aside
 7. Contact Page https://www.staticforms.xyz/
+8. Footer
 
 #### Discarded
 
