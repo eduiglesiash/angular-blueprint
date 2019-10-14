@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1571070388301,
+  "timestamp": 1571070733906,
   "index": "https://angularbuilders.github.io/angular-blueprint/index.html",
   "assetGroups": [
     {
@@ -14,8 +14,8 @@
         "https://angularbuilders.github.io/angular-blueprint/5-es5.91356810927f10d7bf22.js",
         "https://angularbuilders.github.io/angular-blueprint/favicon.ico",
         "https://angularbuilders.github.io/angular-blueprint/index.html",
-        "https://angularbuilders.github.io/angular-blueprint/main-es2015.561c8473185d8d4518e7.js",
-        "https://angularbuilders.github.io/angular-blueprint/main-es5.561c8473185d8d4518e7.js",
+        "https://angularbuilders.github.io/angular-blueprint/main-es2015.49e8445a4c2b2de9abd3.js",
+        "https://angularbuilders.github.io/angular-blueprint/main-es5.49e8445a4c2b2de9abd3.js",
         "https://angularbuilders.github.io/angular-blueprint/manifest.webmanifest",
         "https://angularbuilders.github.io/angular-blueprint/polyfills-es2015.25bfed26497f24d6d1d7.js",
         "https://angularbuilders.github.io/angular-blueprint/polyfills-es5.3ff796571eb9f406f768.js",
@@ -64,9 +64,9 @@
     "https://angularbuilders.github.io/angular-blueprint/assets/sakura.css": "a880103f3090d0e2cce45f98b92434e9dfb2d5da",
     "https://angularbuilders.github.io/angular-blueprint/assets/water.css": "9d8f6905768d2b1f52891dad77b2b526dcefbae9",
     "https://angularbuilders.github.io/angular-blueprint/favicon.ico": "ecec14d30b0a48f643a5eff264e1bc78488a3c93",
-    "https://angularbuilders.github.io/angular-blueprint/index.html": "61230b3227e3aed92960452d66c995c09ae3632e",
-    "https://angularbuilders.github.io/angular-blueprint/main-es2015.561c8473185d8d4518e7.js": "1a964139ac0eac1c5c5d09ee3899e7ef1144d3e3",
-    "https://angularbuilders.github.io/angular-blueprint/main-es5.561c8473185d8d4518e7.js": "46b7d95466473c6634cd3e93cbc649b9dcdf7873",
+    "https://angularbuilders.github.io/angular-blueprint/index.html": "dc5bd1ba8d014bd5d2be9304b344347a073dbab9",
+    "https://angularbuilders.github.io/angular-blueprint/main-es2015.49e8445a4c2b2de9abd3.js": "081c95afd94ea0cbdf35a09a32ff130445b669dd",
+    "https://angularbuilders.github.io/angular-blueprint/main-es5.49e8445a4c2b2de9abd3.js": "1ad62ea03c90c5e1b7fb0cf37247386720b495cb",
     "https://angularbuilders.github.io/angular-blueprint/manifest.webmanifest": "e0417fd3a626196ba30df1321872db4ad8d5dac0",
     "https://angularbuilders.github.io/angular-blueprint/polyfills-es2015.25bfed26497f24d6d1d7.js": "faea66061c18a2e0d530c5ae61ec0f468336aec0",
     "https://angularbuilders.github.io/angular-blueprint/polyfills-es5.3ff796571eb9f406f768.js": "aa66f7927968019c00227246bc07d95b8e17ed82",
