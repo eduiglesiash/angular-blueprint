@@ -1,14 +1,18 @@
 # To Do
 
+- Descomponer más el layout
+
+- MailChimp Form
+
 - Contact Page https://www.staticforms.xyz/
 
 - Basic crud sample https://jsonbox.io/
 
-- Shell for initial load
-
 - Interceptors https://next.angular.io/cli/generate#interceptor-command
 
 - Global Error handling https://github.com/angularbuilders/angular-oldprint/blob/master/libs/ab-tracker/src/lib/services/error-handler.service.ts
+
+- Shell for initial load
 
 ## Doing
 
