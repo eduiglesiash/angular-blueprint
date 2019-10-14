@@ -1,8 +1,5 @@
-<ul>
-  <li *ngFor="let link of links">
-    <a href="{{ link.href }}"
-       target="_blank">
-      {{ link.caption }}.
-    </a>
-  </li>
-</ul>
+<div *ngFor="let route of routes">
+  <button [routerLink]="route.link">
+    {{ route.caption }}.
+  </button>
+</div>

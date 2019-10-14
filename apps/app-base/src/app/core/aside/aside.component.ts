@@ -4,15 +4,16 @@ import {
   Input,
   OnInit
 } from '@angular/core';
+import { Link } from '../models/link.interface';
 
 @Component({
-  selector: 'abs-nav',
-  templateUrl: './nav.component.html',
+  selector: 'abs-aside',
+  templateUrl: './aside.component.html',
   styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class NavComponent implements OnInit {
-  @Input() routes: any[];
+export class AsideComponent implements OnInit {
+  @Input() links: Link[];
   constructor() {}
 
   ngOnInit() {}

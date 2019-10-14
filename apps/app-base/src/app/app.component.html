@@ -7,14 +7,15 @@
       <router-outlet></router-outlet>
     </section>
     <nav>
-      <abs-nav [links]="links$ | async"></abs-nav>
+      <abs-nav [routes]="[{link:'/', caption:'Home'},{link:'/contact', caption:'Contact'}]"></abs-nav>
     </nav>
     <aside>
-      <small>Aprender, programar, disfrutar, repetir.</small>
+      <abs-aside [links]="links$ | async"></abs-aside>
     </aside>
   </main>
   <footer>
     <small>Una iniciativa de <a href="https://www.linkedin.com/in/albertobasalo/"
          target="blank">Alberto Basalo</a> para programadores y arquitectos de software.</small>
+    <small>Aprender, programar, disfrutar, repetir.</small>
   </footer>
 </article>
