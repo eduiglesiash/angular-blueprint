@@ -11,6 +11,14 @@ article > main {
   flex-shrink: 0;
   flex-basis: auto;
   flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top-color: darkgray;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom-color: darkgray;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 
 article > main > section {
