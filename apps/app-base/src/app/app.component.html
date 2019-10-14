@@ -2,28 +2,17 @@
   <header>
     <abs-header [title]="title"></abs-header>
   </header>
-  <section>
-    <main>
-      <h1>Welcome to {{ title }}!</h1>
-      <p>A base to build big web applications with Angular.</p>
-      <p><a href="https://github.com/angularbuilders/angular-blueprint"
-           target="_blank">Code
-        </a> crafted with ♥ by</p>
-      <a href="https://angular.builders/"
-         target="_blank"><img src="./assets/angular.builders.png"
-             alt="Angular.Builders"
-             width="40%"
-             height="auto"></a>
-
+  <main>
+    <section>
       <router-outlet></router-outlet>
-    </main>
+    </section>
     <nav>
       <abs-nav [links]="links$ | async"></abs-nav>
     </nav>
     <aside>
       <small>Aprender, programar, disfrutar, repetir.</small>
     </aside>
-  </section>
+  </main>
   <footer>
     <small>Una iniciativa de <a href="https://www.linkedin.com/in/albertobasalo/"
          target="blank">Alberto Basalo</a> para programadores y arquitectos de software.</small>

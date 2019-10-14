@@ -1,6 +1,5 @@
 # To Do
 
-- Descomponer más el layout
 
 - MailChimp Form
 
@@ -24,4 +23,5 @@
 2. PWA icons and auto update
 3. CSS reset https://watercss.netlify.com/
 4. Flex Layout https://github.com/philipwalton/solved-by-flexbox
+5. Home page
 

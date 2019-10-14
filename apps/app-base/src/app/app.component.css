@@ -5,7 +5,7 @@ article {
 article > header {
   flex: none;
 }
-article > section {
+article > main {
   display: flex;
   flex-grow: 1;
   flex-shrink: 0;
@@ -13,16 +13,16 @@ article > section {
   flex-direction: row;
 }
 
-article > section > main {
+article > main > section {
   flex: 1;
   flex-direction: column;
 }
-article > section > aside {
+article > main > aside {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 12em;
 }
-article > section > nav {
+article > main > nav {
   order: -1;
   flex-grow: 0;
   flex-shrink: 0;
@@ -34,10 +34,10 @@ article > footer {
 }
 
 @media (max-width: 768px) {
-  article > section {
+  article > main {
     flex-direction: column;
   }
-  article > section > aside {
+  article > main > aside {
     display: none;
   }
 }
