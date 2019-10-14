@@ -40,4 +40,7 @@ article > footer {
   article > main > aside {
     display: none;
   }
+  article > main > nav {
+    flex-basis: auto;
+  }
 }

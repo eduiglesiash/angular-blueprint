@@ -1,10 +1,5 @@
 # To Do
 
-
-- MailChimp Form
-
-- Contact Page https://www.staticforms.xyz/
-
 - Basic crud sample https://jsonbox.io/
 
 - Interceptors https://next.angular.io/cli/generate#interceptor-command
@@ -14,6 +9,10 @@
 - Shell for initial load
 
 ## Doing
+
+7. Contact Page https://www.staticforms.xyz/
+
+- MailChimp Form
 
 
 ### Done
