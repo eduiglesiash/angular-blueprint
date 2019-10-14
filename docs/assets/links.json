@@ -1,14 +1,20 @@
 [
   {
-    "href": "https://academia-binaria.com/",
-    "caption": "Blog tutorial Academia Binaria"
+    "path": "https://academia-binaria.com/",
+    "data": {
+      "caption": "Blog tutorial Academia Binaria"
+    }
   },
   {
-    "href": "https://www.trainingit.es/curso-angular-basico/?promo=angular.builders",
-    "caption": "Curso Online de Angular Básico"
+    "path": "https://www.trainingit.es/curso-angular-basico/?promo=angular.builders",
+    "data": {
+      "caption": "Curso Online de Angular Básico"
+    }
   },
   {
-    "href": "https://www.trainingit.es/curso-angular-avanzado/?promo=angular.builders",
-    "caption": "Curso Online de Angular Avanzado"
+    "path": "https://www.trainingit.es/curso-angular-avanzado/?promo=angular.builders",
+    "data": {
+      "caption": "Curso Online de Angular Avanzado"
+    }
   }
 ]

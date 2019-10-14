@@ -174,7 +174,7 @@ select {
   outline: none;
 }
 
-input,
+input:not([type='submit']),
 select {
   width: 100%;
   box-sizing: border-box;
