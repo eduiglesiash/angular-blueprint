@@ -28,7 +28,8 @@
             "assets": [
               "apps/app-base/src/favicon.ico",
               "apps/app-base/src/assets",
-              "apps/app-base/src/manifest.webmanifest"
+              "apps/app-base/src/manifest.webmanifest",
+              "apps/app-base/src/404.html"
             ],
             "styles": [],
             "scripts": []

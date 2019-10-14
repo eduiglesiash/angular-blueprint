@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1571070733906,
+  "timestamp": 1571074111253,
   "index": "https://angularbuilders.github.io/angular-blueprint/index.html",
   "assetGroups": [
     {
@@ -64,7 +64,7 @@
     "https://angularbuilders.github.io/angular-blueprint/assets/sakura.css": "a880103f3090d0e2cce45f98b92434e9dfb2d5da",
     "https://angularbuilders.github.io/angular-blueprint/assets/water.css": "9d8f6905768d2b1f52891dad77b2b526dcefbae9",
     "https://angularbuilders.github.io/angular-blueprint/favicon.ico": "ecec14d30b0a48f643a5eff264e1bc78488a3c93",
-    "https://angularbuilders.github.io/angular-blueprint/index.html": "dc5bd1ba8d014bd5d2be9304b344347a073dbab9",
+    "https://angularbuilders.github.io/angular-blueprint/index.html": "fe99177b786bb671eff1345babd0ff71596f21b5",
     "https://angularbuilders.github.io/angular-blueprint/main-es2015.49e8445a4c2b2de9abd3.js": "081c95afd94ea0cbdf35a09a32ff130445b669dd",
     "https://angularbuilders.github.io/angular-blueprint/main-es5.49e8445a4c2b2de9abd3.js": "1ad62ea03c90c5e1b7fb0cf37247386720b495cb",
     "https://angularbuilders.github.io/angular-blueprint/manifest.webmanifest": "e0417fd3a626196ba30df1321872db4ad8d5dac0",
