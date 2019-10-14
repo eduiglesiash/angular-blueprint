@@ -7,10 +7,10 @@
       <router-outlet></router-outlet>
     </section>
     <nav>
-      <abs-nav [routes]="[{link:'/', caption:'Home'},{link:'/contact', caption:'Contact'}]"></abs-nav>
+      <abs-nav [appRoutes]="routes"></abs-nav>
     </nav>
     <aside>
-      <abs-aside [links]="links$ | async"></abs-aside>
+      <abs-aside [externalLinks]="links$ | async"></abs-aside>
     </aside>
   </main>
   <footer>

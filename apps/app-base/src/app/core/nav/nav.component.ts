@@ -12,7 +12,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavComponent implements OnInit {
-  @Input() routes: any[];
+  @Input() appRoutes: any[];
   constructor() {}
 
   ngOnInit() {}

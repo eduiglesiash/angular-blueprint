@@ -6,18 +6,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
+import { routes } from './routes';
 
-const routes = [
-  {
-    path: '',
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
-  },
-  {
-    path: 'contact',
-    loadChildren: () =>
-      import('./contact/contact.module').then(m => m.ContactModule)
-  }
-];
 @NgModule({
   declarations: [AppComponent],
   imports: [

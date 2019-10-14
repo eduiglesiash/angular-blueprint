@@ -13,7 +13,7 @@ import { Link } from '../models/link.interface';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AsideComponent implements OnInit {
-  @Input() links: Link[];
+  @Input() externalLinks: Link[];
   constructor() {}
 
   ngOnInit() {}

@@ -6,7 +6,6 @@
 
 - Global Error handling https://github.com/angularbuilders/angular-oldprint/blob/master/libs/ab-tracker/src/lib/services/error-handler.service.ts
 
-- Shell for initial load
 
 ## Doing
 
@@ -22,7 +21,9 @@
 6. Nav and aside
 7. Contact Page https://www.staticforms.xyz/
 8. Footer
+9. Core AppService
 
 #### Discarded
 
 - Mailchimp form
+- Shell for initial load
