@@ -19,12 +19,17 @@
   <fieldset>
     <label for="name">Your name:</label>
     <input id="name"
+           name="name"
            type="text">
     <label for="email">Your email:</label>
     <input id="email"
-           type="email">
+           name="eamil"
+           type="email"
+           required>
     <label for="message">Your message:</label>
-    <textarea id="message"></textarea>
+    <textarea id="message"
+              name="message"></textarea>
   </fieldset>
-  <button type="submit">Send</button>
+  <input type="submit"
+         value="Submit" />
 </form>
