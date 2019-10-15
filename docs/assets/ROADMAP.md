@@ -1,15 +1,12 @@
 # To Do
 
-- Github url
-
-
 - Basic crud sample https://jsonbox.io/
 
 - Interceptors https://next.angular.io/cli/generate#interceptor-command
 
 - Global Error handling https://github.com/angularbuilders/angular-oldprint/blob/master/libs/ab-tracker/src/lib/services/error-handler.service.ts
 
-## Doing
+## _Doing_
 
 
 ### Done
@@ -24,9 +21,10 @@
 7. Contact Page https://www.staticforms.xyz/
 8. Footer
 9. Core AppService
-10. Roadmap features markdown view
+10. Roadmap features https://github.com/jfcere/ngx-markdown
+11. Github y angular.builders urls
 
-#### Discarded
+#### ~~Discarded~~
 
 - Mailchimp form
 - Shell for initial load

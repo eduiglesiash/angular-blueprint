@@ -16,5 +16,17 @@
     "data": {
       "caption": "Curso Online de Angular Avanzado"
     }
+  },
+  {
+    "path": "https://github.com/angularbuilders/angular-blueprint",
+    "data": {
+      "caption": "Angular-Blueprint Code"
+    }
+  },
+  {
+    "path": "https://angular.builders",
+    "data": {
+      "caption": "Angular.Builders"
+    }
   }
 ]
