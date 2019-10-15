@@ -57,7 +57,7 @@ export class AppService {
   public getMarkdown$(url: string) {
     return this.http.get(url, {
       headers: this.markdownHeader,
-      responseType: 'text/markdown'
+      responseType: 'text'
     });
   }
 
