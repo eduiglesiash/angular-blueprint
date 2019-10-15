@@ -2,6 +2,10 @@
 
 Base repository for Profesional Angular Applications
 
+## Roadmap
+
+[Features Roadmap](https://angularbuilders.github.io/angular-blueprint/roadmap)
+
 ## Getting Started
 
 Clone or fork to use like a template for creating yours.

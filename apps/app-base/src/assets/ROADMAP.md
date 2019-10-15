@@ -2,7 +2,6 @@
 
 - Github url
 
-- Roadmap features markdown view
 
 - Basic crud sample https://jsonbox.io/
 
@@ -11,6 +10,7 @@
 - Global Error handling https://github.com/angularbuilders/angular-oldprint/blob/master/libs/ab-tracker/src/lib/services/error-handler.service.ts
 
 ## Doing
+
 
 ### Done
 
@@ -24,6 +24,7 @@
 7. Contact Page https://www.staticforms.xyz/
 8. Footer
 9. Core AppService
+10. Roadmap features markdown view
 
 #### Discarded
 

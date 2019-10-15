@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
@@ -17,6 +17,10 @@ export class AppService {
     private http: HttpClient,
     private swUpdate: SwUpdate
   ) {}
+
+  private readonly markdownHeader = new HttpHeaders({
+    'Content-Type': 'text/markdown; charset=UTF-8'
+  });
 
   public checkVersionUpdates() {
     if (this.swUpdate.isEnabled) {
@@ -48,6 +52,13 @@ export class AppService {
 
   public getLinks$() {
     return this.http.get<Link[]>('assets/links.json');
+  }
+
+  public getMarkdown$(url: string) {
+    return this.http.get(url, {
+      headers: this.markdownHeader,
+      responseType: 'text/markdown'
+    });
   }
 
   private askToUpdateApp(event: UpdateAvailableEvent) {

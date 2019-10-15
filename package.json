@@ -58,6 +58,7 @@
     "@nrwl/angular": "^8.6.0",
     "core-js": "^2.5.4",
     "mini.css": "^3.0.1",
+    "ngx-markdown": "^8.2.1",
     "rxjs": "~6.4.0",
     "zone.js": "^0.9.1"
   },
