@@ -35,11 +35,11 @@ export class AppService {
         }),
         filter((route: ActivatedRoute) => route.outlet === 'primary'),
         map((route: ActivatedRoute) => route.snapshot),
-        tap((snapshop: ActivatedRouteSnapshot) =>
-          this.gtagService.sendPageView(snapshop.data.title, snapshop.url)
+        tap((snapshot: ActivatedRouteSnapshot) =>
+          this.gtagService.sendPageView(snapshot.data.title, this.router.url)
         ),
-        tap((snapshop: ActivatedRouteSnapshot) =>
-          this.title.setTitle(snapshop.data.title)
+        tap((snapshot: ActivatedRouteSnapshot) =>
+          this.title.setTitle(snapshot.data.title)
         )
       )
       .subscribe();
