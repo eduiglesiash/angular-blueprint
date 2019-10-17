@@ -12,9 +12,8 @@ import { routes } from './routes';
 export class AppComponent {
   public title = 'Angular-Blueprint';
   public links$: Observable<Link[]>;
-  public routes: Link[];
+  public routes: Link[] = routes;
   constructor(appService: AppService) {
-    this.routes = routes;
     this.links$ = appService.getLinks$();
     appService.checkVersionUpdates();
     appService.setDynamicTitle();

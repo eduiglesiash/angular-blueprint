@@ -4,7 +4,6 @@
 
 - Interceptors https://next.angular.io/cli/generate#interceptor-command
 
-- Global Error handling https://github.com/angularbuilders/angular-oldprint/blob/master/libs/ab-tracker/src/lib/services/error-handler.service.ts
 
 ## _Doing_
 
@@ -23,6 +22,7 @@
 9. Core AppService
 10. Roadmap features https://github.com/jfcere/ngx-markdown
 11. Github y angular.builders urls
+12. Global Error handling
 
 #### ~~Discarded~~
 

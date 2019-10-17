@@ -2,9 +2,9 @@
   "spellright.language": ["en", "es"],
   "spellright.documentTypes": ["markdown", "latex", "plaintext"],
   "workbench.colorCustomizations": {
-    "editorError.foreground": "#f5f0f0",
-    "editorWarning.foreground": "#eff0e3",
-    "editorInfo.foreground": "#eaf3f6",
+    "editorError.foreground": "#f07f7f",
+    "editorWarning.foreground": "#e9eeb2",
+    "editorInfo.foreground": "#abe6fa",
     "activityBar.background": "#3399ff",
     "activityBar.foreground": "#15202b",
     "activityBar.inactiveForeground": "#15202b99",
