@@ -16,6 +16,6 @@ export class AppComponent {
   constructor(appService: AppService) {
     this.links$ = appService.getLinks$();
     appService.checkVersionUpdates();
-    appService.setDynamicTitle();
+    appService.handleRouterEvents();
   }
 }
