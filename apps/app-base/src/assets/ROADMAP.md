@@ -1,5 +1,7 @@
 # To Do
 
+- REFACTOR: use libraries instead of modules
+
 - Basic crud sample https://jsonbox.io/
 
 - Interceptors https://next.angular.io/cli/generate#interceptor-command
