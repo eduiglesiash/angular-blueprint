@@ -18,7 +18,7 @@
 3. CSS reset https://watercss.netlify.com/
 4. Flex Layout https://github.com/philipwalton/solved-by-flexbox
 5. Home page
-6. Nav and aside
+6. Layout Nav and aside
 7. Contact Page https://www.staticforms.xyz/
 8. Footer
 9. Core AppService

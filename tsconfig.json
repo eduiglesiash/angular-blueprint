@@ -15,7 +15,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-blueprint/shared/ui/layout": [
+        "libs/shared/ui/layout/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

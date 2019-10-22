@@ -32,9 +32,7 @@
               "apps/app-base/src/404.html"
             ],
             "styles": [],
-            "scripts": [
-              "node_modules/marked/lib/marked.js"
-            ]
+            "scripts": ["node_modules/marked/lib/marked.js"]
           },
           "configurations": {
             "production": {
@@ -94,10 +92,7 @@
               "apps/app-base/tsconfig.app.json",
               "apps/app-base/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/app-base/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/app-base/**"]
           }
         },
         "test": {
@@ -131,16 +126,38 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/app-base-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/app-base-e2e/**"
-            ]
+            "tsConfig": ["apps/app-base-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/app-base-e2e/**"]
           }
         }
       }
+    },
+    "shared-ui-layout": {
+      "projectType": "library",
+      "root": "libs/shared/ui/layout",
+      "sourceRoot": "libs/shared/ui/layout/src",
+      "prefix": "shred-ui-layout",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/ui/layout/tsconfig.lib.json",
+              "libs/shared/ui/layout/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/ui/layout/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/ui/layout/jest.config.js",
+            "tsConfig": "libs/shared/ui/layout/tsconfig.spec.json",
+            "setupFile": "libs/shared/ui/layout/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {
