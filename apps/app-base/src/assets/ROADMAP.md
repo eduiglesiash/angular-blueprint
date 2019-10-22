@@ -23,7 +23,7 @@
 8. Footer
 9. Core AppService
 10. Roadmap features https://github.com/jfcere/ngx-markdown
-11. Github y angular.builders urls
+11. Github y angular.builders url
 12. Global Error handling
 13. Google Tag services for analytics
 
