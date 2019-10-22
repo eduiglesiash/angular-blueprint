@@ -1,7 +1,0 @@
-{
-  "extends": "../../../../tslint.json",
-  "rules": {
-    "directive-selector": [true, "attribute", "shredUiLayout", "camelCase"],
-    "component-selector": [true, "element", "shred-ui-layout", "kebab-case"]
-  }
-}

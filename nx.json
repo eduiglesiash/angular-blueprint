@@ -13,12 +13,6 @@
     },
     "app-base": {
       "tags": []
-    },
-    "shared-ui-layout": {
-      "tags": [
-        "scope:shared",
-        "type:ui"
-      ]
     }
   }
 }
