@@ -1,3 +1,4 @@
+import { LayoutFeatureModule } from '@angular-blueprint/layout/feature';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,7 +9,6 @@ import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { routes } from './routes';
-
 // export const routes: Link[] = [
 // ];
 
@@ -22,7 +22,8 @@ import { routes } from './routes';
     RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production
-    })
+    }),
+    LayoutFeatureModule
   ],
   providers: [],
   bootstrap: [AppComponent]

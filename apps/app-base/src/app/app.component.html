@@ -1,19 +1,5 @@
-<article>
-  <header>
-    <abs-header [title]="title"></abs-header>
-  </header>
+<layout-feature-admin [title]="title">
   <main>
-    <section>
-      <router-outlet></router-outlet>
-    </section>
-    <nav>
-      <abs-nav [appRoutes]="routes"></abs-nav>
-    </nav>
-    <aside>
-      <abs-aside [externalLinks]="links$ | async"></abs-aside>
-    </aside>
+    <router-outlet></router-outlet>
   </main>
-  <footer>
-    <abs-footer></abs-footer>
-  </footer>
-</article>
+</layout-feature-admin>

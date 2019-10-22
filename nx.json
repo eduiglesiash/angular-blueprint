@@ -13,6 +13,15 @@
     },
     "app-base": {
       "tags": []
+    },
+    "layout-ui": {
+      "tags": ["scope:layout", "type:ui"]
+    },
+    "layout-domain": {
+      "tags": []
+    },
+    "layout-feature": {
+      "tags": []
     }
   }
 }

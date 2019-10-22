@@ -141,6 +141,96 @@
           }
         }
       }
+    },
+    "layout-ui": {
+      "projectType": "library",
+      "root": "libs/layout/ui",
+      "sourceRoot": "libs/layout/ui/src",
+      "prefix": "layout-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/layout/ui/tsconfig.lib.json",
+              "libs/layout/ui/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/layout/ui/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/layout/ui/jest.config.js",
+            "tsConfig": "libs/layout/ui/tsconfig.spec.json",
+            "setupFile": "libs/layout/ui/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "layout-domain": {
+      "projectType": "library",
+      "root": "libs/layout/domain",
+      "sourceRoot": "libs/layout/domain/src",
+      "prefix": "angular-blueprint",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/layout/domain/tsconfig.lib.json",
+              "libs/layout/domain/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/layout/domain/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/layout/domain/jest.config.js",
+            "tsConfig": "libs/layout/domain/tsconfig.spec.json",
+            "setupFile": "libs/layout/domain/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "layout-feature": {
+      "projectType": "library",
+      "root": "libs/layout/feature",
+      "sourceRoot": "libs/layout/feature/src",
+      "prefix": "layout-feature",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/layout/feature/tsconfig.lib.json",
+              "libs/layout/feature/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/layout/feature/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/layout/feature/jest.config.js",
+            "tsConfig": "libs/layout/feature/tsconfig.spec.json",
+            "setupFile": "libs/layout/feature/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

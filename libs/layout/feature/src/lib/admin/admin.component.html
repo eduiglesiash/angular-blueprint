@@ -1,0 +1,19 @@
+<article>
+  <header>
+    <layout-ui-top-bar [title]="title"></layout-ui-top-bar>
+  </header>
+  <main>
+    <section>
+      <ng-content select="main"></ng-content>
+    </section>
+    <nav *ngIf="appRoutes$ | async as appRoutes">
+      <layout-ui-app-navigator [appRoutes]="appRoutes"></layout-ui-app-navigator>
+    </nav>
+    <aside *ngIf="externalLinks$ | async as externalLinks">
+      <layout-ui-external-links [externalLinks]="externalLinks"></layout-ui-external-links>
+    </aside>
+  </main>
+  <footer>
+    <layout-ui-legal-credits></layout-ui-legal-credits>
+  </footer>
+</article>
