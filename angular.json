@@ -32,9 +32,7 @@
               "apps/app-base/src/404.html"
             ],
             "styles": [],
-            "scripts": [
-              "node_modules/marked/lib/marked.js"
-            ]
+            "scripts": ["node_modules/marked/lib/marked.js"]
           },
           "configurations": {
             "production": {
@@ -94,10 +92,7 @@
               "apps/app-base/tsconfig.app.json",
               "apps/app-base/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/app-base/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/app-base/**"]
           }
         },
         "test": {
@@ -131,13 +126,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/app-base-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/app-base-e2e/**"
-            ]
+            "tsConfig": ["apps/app-base-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/app-base-e2e/**"]
           }
         }
       }
@@ -155,10 +145,7 @@
               "libs/layout/ui/tsconfig.lib.json",
               "libs/layout/ui/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/layout/ui/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/layout/ui/**"]
           }
         },
         "test": {
@@ -185,10 +172,7 @@
               "libs/layout/domain/tsconfig.lib.json",
               "libs/layout/domain/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/layout/domain/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/layout/domain/**"]
           }
         },
         "test": {
@@ -215,10 +199,7 @@
               "libs/layout/feature/tsconfig.lib.json",
               "libs/layout/feature/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/layout/feature/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/layout/feature/**"]
           }
         },
         "test": {
@@ -227,6 +208,33 @@
             "jestConfig": "libs/layout/feature/jest.config.js",
             "tsConfig": "libs/layout/feature/tsconfig.spec.json",
             "setupFile": "libs/layout/feature/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "pwa": {
+      "projectType": "library",
+      "root": "libs/pwa",
+      "sourceRoot": "libs/pwa/src",
+      "prefix": "angular-blueprint",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/pwa/tsconfig.lib.json",
+              "libs/pwa/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/pwa/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/pwa/jest.config.js",
+            "tsConfig": "libs/pwa/tsconfig.spec.json",
+            "setupFile": "libs/pwa/src/test-setup.ts"
           }
         }
       },

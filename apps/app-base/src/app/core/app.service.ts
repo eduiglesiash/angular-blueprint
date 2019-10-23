@@ -6,7 +6,6 @@ import {
   NavigationEnd,
   Router
 } from '@angular/router';
-import { SwUpdate, UpdateAvailableEvent } from '@angular/service-worker';
 import { filter, map, tap } from 'rxjs/operators';
 import { GtagService } from './gtag.service';
 
@@ -18,7 +17,6 @@ export class AppService {
     private activatedRoute: ActivatedRoute,
     private gtagService: GtagService,
     private router: Router,
-    private swUpdate: SwUpdate,
     private title: Title
   ) {}
 
@@ -43,25 +41,5 @@ export class AppService {
         )
       )
       .subscribe();
-  }
-
-  public checkVersionUpdates() {
-    if (this.swUpdate.isEnabled) {
-      this.swUpdate.checkForUpdate();
-      this.swUpdate.available.subscribe((event: UpdateAvailableEvent) => {
-        if (event.current.appData) {
-          this.askToUpdateApp(event);
-        }
-      });
-    }
-  }
-  private askToUpdateApp(event: UpdateAvailableEvent) {
-    const appData: any = event.current.appData;
-    let msg = `New version ${appData.version} available.`;
-    msg += `${appData.changelog}.`;
-    msg += 'Reaload now?';
-    if (confirm(msg)) {
-      window.location.reload();
-    }
   }
 }

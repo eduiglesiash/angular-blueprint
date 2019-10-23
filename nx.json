@@ -22,6 +22,9 @@
     },
     "layout-feature": {
       "tags": []
+    },
+    "pwa": {
+      "tags": []
     }
   }
 }
