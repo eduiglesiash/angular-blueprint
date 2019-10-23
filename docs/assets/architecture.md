@@ -11,26 +11,39 @@
 
 ### Layout
 
-- Header
+#### feature
 
-- Navigator
+- AdminComponent
 
-- Footer
+#### ui
 
-- Aside
+- TopBar
 
-- Modal
+- AppNavigator
 
+- LegalCredits
 
-### Tracking
+- ExternalLink
 
-- PageViewTracker
+- _Modal_
 
-- ErrorsTracker
+### PWA
 
-- EventsTracker
+- PwaService
 
-- GTagWriter
+### Tracker
+
+- RoutesService
+
+- ErrorHandler
+
+- GtagService
+
+- _EventsTracker_
+
+- _GTagWriter_
+
+- _ErrorInterceptor_
 
 ## Tools
 
