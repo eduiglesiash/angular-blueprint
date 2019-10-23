@@ -1,5 +1,5 @@
 import { LayoutFeatureModule } from '@angular-blueprint/layout/feature';
-//import { PwaModule } from '@angular-blueprint/pwa';
+import { PwaModule } from '@angular-blueprint/pwa';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -25,8 +25,10 @@ import { routes } from './routes';
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production
     }),
-    LayoutFeatureModule
-    // PwaModule.forRoot()
+    LayoutFeatureModule,
+    PwaModule.forRoot({
+      isProduction: environment.production
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
