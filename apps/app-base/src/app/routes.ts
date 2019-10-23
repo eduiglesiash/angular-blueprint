@@ -1,4 +1,5 @@
-import { Link } from './core/models/link.interface';
+import { Link } from '@angular-blueprint/tracker';
+
 export const routes: Link[] = [
   {
     path: '',

@@ -1,5 +1,6 @@
 import { LayoutFeatureModule } from '@angular-blueprint/layout/feature';
 import { PwaModule } from '@angular-blueprint/pwa';
+import { TrackerModule } from '@angular-blueprint/tracker';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,7 +9,6 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { MarkdownModule } from 'ngx-markdown';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
 import { routes } from './routes';
 
 // export const routes: Link[] = [
@@ -18,7 +18,6 @@ import { routes } from './routes';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    CoreModule,
     HttpClientModule,
     MarkdownModule.forRoot(),
     RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),
@@ -28,7 +27,8 @@ import { routes } from './routes';
     LayoutFeatureModule,
     PwaModule.forRoot({
       isProduction: environment.production
-    })
+    }),
+    TrackerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

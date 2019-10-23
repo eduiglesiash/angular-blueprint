@@ -239,6 +239,33 @@
         }
       },
       "schematics": {}
+    },
+    "tracker": {
+      "projectType": "library",
+      "root": "libs/tracker",
+      "sourceRoot": "libs/tracker/src",
+      "prefix": "angular-blueprint",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/tracker/tsconfig.lib.json",
+              "libs/tracker/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/tracker/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/tracker/jest.config.js",
+            "tsConfig": "libs/tracker/tsconfig.spec.json",
+            "setupFile": "libs/tracker/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

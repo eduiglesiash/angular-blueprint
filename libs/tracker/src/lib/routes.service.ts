@@ -12,7 +12,7 @@ import { GtagService } from './gtag.service';
 @Injectable({
   providedIn: 'root'
 })
-export class AppService {
+export class RoutesService {
   constructor(
     private activatedRoute: ActivatedRoute,
     private gtagService: GtagService,
@@ -20,7 +20,7 @@ export class AppService {
     private title: Title
   ) {}
 
-  public handleRouterEvents() {
+  init() {
     this.router.events
       .pipe(
         filter(event => event instanceof NavigationEnd),

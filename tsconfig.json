@@ -19,7 +19,8 @@
       "@angular-blueprint/layout/ui": ["libs/layout/ui/src/index.ts"],
       "@angular-blueprint/layout/domain": ["libs/layout/domain/src/index.ts"],
       "@angular-blueprint/layout/feature": ["libs/layout/feature/src/index.ts"],
-      "@angular-blueprint/pwa": ["libs/pwa/src/index.ts"]
+      "@angular-blueprint/pwa": ["libs/pwa/src/index.ts"],
+      "@angular-blueprint/tracker": ["libs/tracker/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { MarkdownService } from '../core/markdown.service';
+import { MarkdownService } from '../markdown.service';
 
 @Component({
   selector: 'abs-roadmap',

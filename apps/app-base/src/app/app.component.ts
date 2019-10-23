@@ -1,6 +1,6 @@
 import { PwaService } from '@angular-blueprint/pwa';
+import { RoutesService } from '@angular-blueprint/tracker';
 import { Component } from '@angular/core';
-import { AppService } from './core/app.service';
 @Component({
   selector: 'abs-root',
   templateUrl: './app.component.html',
@@ -8,8 +8,8 @@ import { AppService } from './core/app.service';
 })
 export class AppComponent {
   public title = 'Angular-Blueprint';
-  constructor(appService: AppService, pwa: PwaService) {
-    appService.handleRouterEvents();
+  constructor(appService: RoutesService, pwa: PwaService) {
+    appService.init();
     pwa.init();
   }
 }
