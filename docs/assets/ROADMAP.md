@@ -1,7 +1,5 @@
 # To Do
 
-- REFACTOR: use libraries instead of modules
-
 - Basic crud sample https://jsonbox.io/
 
 - Interceptors https://next.angular.io/cli/generate#interceptor-command
@@ -9,6 +7,7 @@
 
 ## _Doing_
 
+- REFACTOR: use libraries instead of modules
 
 ### Done
 
@@ -23,7 +22,7 @@
 8. Footer
 9. Core AppService
 10. Roadmap features https://github.com/jfcere/ngx-markdown
-11. Github y angular.builders url
+11. GitHub y angular.builders url
 12. Global Error handling
 13. Google Tag services for analytics
 
