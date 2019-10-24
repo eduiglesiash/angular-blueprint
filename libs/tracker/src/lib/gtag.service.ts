@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { TrackerConfig } from './models/tracker-config.class';
 import { TrackingEntry } from './tracker.service';
 
 declare var gtag;
@@ -7,15 +8,15 @@ declare var gtag;
   providedIn: 'root'
 })
 export class GtagService {
-  constructor(private gTagId: string) {
-    this.addScriptToDOM();
+  constructor(trackerConfig: TrackerConfig) {
+    this.addScriptToDOM(trackerConfig.gTagId);
   }
 
-  private addScriptToDOM() {
+  private addScriptToDOM(gTagId: string) {
     const remoteScript = document.createElement('script');
     remoteScript.type = 'text/javascript';
     remoteScript.async = true;
-    remoteScript.src = `https://www.googletagmanager.com/gtag/js?id=${this.gTagId}`;
+    remoteScript.src = `https://www.googletagmanager.com/gtag/js?id=${gTagId}`;
     document.head.appendChild(remoteScript);
     const localScript = document.createElement('script');
     localScript.type = 'text/javascript';
@@ -24,7 +25,7 @@ export class GtagService {
     function gtag() { dataLayer.push( arguments ); }
     window.gtag = gtag;
     gtag( 'js', new Date() );
-    gtag( 'config', '${this.gTagId}', { 'send_page_view': false } );`;
+    gtag( 'config', '${gTagId}', { 'send_page_view': false } );`;
     document.head.appendChild(localScript);
   }
 

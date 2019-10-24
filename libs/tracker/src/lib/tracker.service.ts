@@ -8,6 +8,18 @@ export interface TrackingEntry {
 export class TrackerService {
   constructor() {}
 
+  writeError(error: TrackingEntry) {
+    console.error(error);
+  }
+
+  writeEvent(event: TrackingEntry) {
+    console.warn(event);
+  }
+}
+
+export class NullTrackerService {
+  constructor() {}
+
   writeError(error: TrackingEntry) {}
 
   writeEvent(event: TrackingEntry) {}

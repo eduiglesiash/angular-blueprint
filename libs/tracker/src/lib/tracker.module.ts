@@ -4,7 +4,7 @@ import { ErrorHandlerService } from './error-handler.service';
 import { GtagService } from './gtag.service';
 import { TrackerConfig } from './models/tracker-config.class';
 import { RoutesService } from './routes.service';
-import { TrackerService } from './tracker.service';
+import { NullTrackerService, TrackerService } from './tracker.service';
 @NgModule({
   imports: [CommonModule],
   providers: [{ provide: ErrorHandler, useClass: ErrorHandlerService }]
@@ -25,10 +25,7 @@ export class TrackerModule {
         {
           provide: TrackerService,
           deps: [TrackerConfig],
-          useFactory: (trackerConfig2: TrackerConfig) =>
-            trackerConfig.gTagId
-              ? new GtagService(trackerConfig2.gTagId)
-              : new TrackerService()
+          useFactory: trackerFactory
         }
       ]
     };
@@ -37,4 +34,13 @@ export class TrackerModule {
   constructor(routesService: RoutesService) {
     routesService.init();
   }
+}
+function trackerFactory(trackerConfig: TrackerConfig) {
+  if (trackerConfig.gTagId) {
+    return new GtagService(trackerConfig);
+  }
+  if (trackerConfig.isProduction) {
+    return new NullTrackerService();
+  }
+  return new TrackerService();
 }
