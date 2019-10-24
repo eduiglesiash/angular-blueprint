@@ -266,6 +266,33 @@
         }
       },
       "schematics": {}
+    },
+    "documents": {
+      "projectType": "library",
+      "root": "libs/documents",
+      "sourceRoot": "libs/documents/src",
+      "prefix": "angular-blueprint-documents",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/documents/tsconfig.lib.json",
+              "libs/documents/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/documents/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/documents/jest.config.js",
+            "tsConfig": "libs/documents/tsconfig.spec.json",
+            "setupFile": "libs/documents/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { MarkdownService } from '../markdown.service';
 
 @Component({
   selector: 'abs-roadmap',
@@ -8,10 +7,7 @@ import { MarkdownService } from '../markdown.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RoadmapComponent implements OnInit {
-  public markdown$;
-  constructor(private markdownService: MarkdownService) {}
+  constructor() {}
 
-  ngOnInit() {
-    this.markdown$ = this.markdownService.getMarkdown$('assets/ROADMAP.md');
-  }
+  ngOnInit() {}
 }

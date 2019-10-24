@@ -1,0 +1,17 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "angularBlueprintDocuments",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "angular-blueprint-documents",
+      "kebab-case"
+    ]
+  }
+}
