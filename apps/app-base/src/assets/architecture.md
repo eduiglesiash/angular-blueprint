@@ -1,15 +1,14 @@
 # Architecture
 
-## Mono repository
+## 1. Projects
 
+### 1.1 App Base
 
-## Projects
+---
 
-### App Base
+## 2. Libraries
 
-## Libraries
-
-### Layout
+### 2.1 Layout
 
 #### feature
 
@@ -27,11 +26,11 @@
 
 - _Modal_
 
-### PWA
+### 2.2 PWA
 
 - PwaService
 
-### Tracker
+### 2.3 Tracker
 
 - TrackerService
 
@@ -43,42 +42,45 @@
 
 - _ErrorInterceptor_
 
-## Tools
 
-### e2e testing
+---
+
+## 3. Tools
+
+### 3.1 e2e testing
 
 - Cypress
 
-### Unit Testing
+### 3.2 Unit Testing
 
 - Jest
 
-### PWA:
+### 3.3 PWA:
 
  - PWA icons
 
-### SEO:
+### 3.4 SEO:
 
  - https://www.npmjs.com/package/ngx-seo
 
-### Release versions
+### 3.5 Release versions
 
 - https://www.npmjs.com/package/ngx-semantic-version
 
-### Auth
+### 3.6 Auth
 
 - https://www.npmjs.com/package/angular-oauth2-oidc
 
-## Patterns and techniques
+---
 
-### Smart Container / dumb presenters
+## 4 Patterns and techniques
 
-### OnPush Change detection strategy
+### 4.1 Smart Container / dumb presenters
 
-### Simple Observable Store
+### 4.2 OnPush Change detection strategy
 
-### Reactive forms
+### 4.3 Simple Observable Store
 
-### Services configuration by token injection
+### 4.4 Reactive forms
 
-###
+### 4.5 Services configuration by token injection

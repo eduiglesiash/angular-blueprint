@@ -1,6 +1,5 @@
 # To Do
 
-- MarkDown library (UI and service)
 
 - Documentation library route with children
 
@@ -29,6 +28,7 @@
 11. GitHub y angular.builders url
 12. Global Error handling
 13. Google Tag services for analytics
+14. Documents library (MarkDown UI and service)
 
 #### ~~Discarded~~
 
