@@ -16,7 +16,10 @@ const blueprintImports: any[] = [
   PwaModule.forRoot({
     isProduction: environment.production
   }),
-  TrackerModule
+  TrackerModule.forRoot({
+    isProduction: environment.production,
+    gTagId: environment.gTagId
+  })
 ];
 
 @NgModule({

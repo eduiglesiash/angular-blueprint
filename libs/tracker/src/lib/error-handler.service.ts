@@ -1,12 +1,12 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { ErrorHandler, Injectable } from '@angular/core';
-import { GtagService } from './gtag.service';
+import { TrackerService } from './tracker.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ErrorHandlerService implements ErrorHandler {
-  constructor(private gtagService: GtagService) {}
+  constructor(private trackerService: TrackerService) {}
 
   public handleError(error: any): void {
     if (error instanceof HttpErrorResponse) {
@@ -20,12 +20,12 @@ export class ErrorHandlerService implements ErrorHandler {
     const statusCode = error.status;
     const origin = statusCode >= 500 ? 'ServerError' : 'ClientError';
     const message = statusCode + ' : ' + error.statusText;
-    this.gtagService.sendError(origin, error.url, message);
+    this.trackerService.writeError({ origin, type: error.url, message });
   }
 
   private handleJsError(error: Error): void {
     const type = error.name ? error.name : 'unknown';
     const message = error.message ? error.message : JSON.stringify(error);
-    this.gtagService.sendError('JsError', type, message);
+    this.trackerService.writeError({ origin: 'JsError', type, message });
   }
 }

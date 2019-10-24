@@ -7,7 +7,7 @@ import {
   Router
 } from '@angular/router';
 import { filter, map, tap } from 'rxjs/operators';
-import { GtagService } from './gtag.service';
+import { TrackerService } from './tracker.service';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +15,7 @@ import { GtagService } from './gtag.service';
 export class RoutesService {
   constructor(
     private activatedRoute: ActivatedRoute,
-    private gtagService: GtagService,
+    private trackerService: TrackerService,
     private router: Router,
     private title: Title
   ) {}
@@ -34,7 +34,11 @@ export class RoutesService {
         filter((route: ActivatedRoute) => route.outlet === 'primary'),
         map((route: ActivatedRoute) => route.snapshot),
         tap((snapshot: ActivatedRouteSnapshot) =>
-          this.gtagService.sendPageView(snapshot.data.title, this.router.url)
+          this.trackerService.writeEvent({
+            origin: snapshot.data.title,
+            type: 'page_view',
+            message: this.router.url
+          })
         ),
         tap((snapshot: ActivatedRouteSnapshot) =>
           this.title.setTitle(snapshot.data.title)
