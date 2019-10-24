@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { ErrorHandlerService } from './error-handler.service';
+import { RoutesService } from './routes.service';
 
 @NgModule({
   imports: [CommonModule],
@@ -11,4 +12,7 @@ export class TrackerModule {
   // config clientSide and production
   // receibe routes in forRoot
   // load metadata
+  constructor(routesService: RoutesService) {
+    routesService.init();
+  }
 }

@@ -3,7 +3,7 @@ import { ApplicationRef, Inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { SwUpdate, UpdateAvailableEvent } from '@angular/service-worker';
 import { concat, interval } from 'rxjs';
 import { first } from 'rxjs/operators';
-import { PwaConfig } from '../models/pwa-config.class';
+import { PwaConfig } from './models/pwa-config.class';
 @Injectable({
   providedIn: 'root'
 })
@@ -16,6 +16,7 @@ export class PwaService {
   ) {}
 
   init() {
+    console.log('initializing: PwaService', this.pwaConfig);
     if (isPlatformBrowser(this.platformId) && this.pwaConfig.isProduction) {
       this.checkVersionUpdates();
       this.subscribeToAvailableVersions();

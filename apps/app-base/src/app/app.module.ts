@@ -11,8 +11,13 @@ import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { routes } from './routes';
 
-// export const routes: Link[] = [
-// ];
+const blueprintImports: any[] = [
+  LayoutFeatureModule,
+  PwaModule.forRoot({
+    isProduction: environment.production
+  }),
+  TrackerModule
+];
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,10 +30,7 @@ import { routes } from './routes';
       enabled: environment.production
     }),
     LayoutFeatureModule,
-    PwaModule.forRoot({
-      isProduction: environment.production
-    }),
-    TrackerModule
+    ...blueprintImports
   ],
   providers: [],
   bootstrap: [AppComponent]
