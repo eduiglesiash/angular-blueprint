@@ -15,7 +15,7 @@
 
 - AdminComponent
 
-#### ui
+#### UI
 
 - TopBar
 
@@ -33,15 +33,13 @@
 
 ### Tracker
 
-- RoutesService
-
-- ErrorHandler
+- TrackerService
 
 - GtagService
 
-- _EventsTracker_
+- RoutesService
 
-- _GTagWriter_
+- ErrorHandlerService
 
 - _ErrorInterceptor_
 
