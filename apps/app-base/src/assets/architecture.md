@@ -1,20 +1,38 @@
 # Architecture
 
+A mono repository solution as a base for creating big Angular applications
+
+Powered by [Nx-dev tools](https://nx.dev/web)
+
+Based on [Enterprise Angular Book](https://leanpub.com/enterprise-angular) by [Manfred Steyer](https://twitter.com/ManfredSteyer)
+
 ## 1. Projects
 
 ### 1.1 App Base
+
+Sample application with no real business functionality. Only to show the use of this architecture.
 
 ---
 
 ## 2. Libraries
 
+Extensible use of libraries. Specially those related with infrastructure or utilities.
+
 ### 2.1 Layout
 
+The more complex at the moment. Scaffolded following the advice of domain driven architectures.
+
+Intended to provide a set of predefined layouts. Starting with a typical **Admin** disposition.
+
 #### feature
+
+Public container components.
 
 - AdminComponent
 
 #### UI
+
+Dumb components as bricks to build a layout.
 
 - TopBar
 
@@ -26,11 +44,27 @@
 
 - _Modal_
 
+#### domain
+
+Services and interfaces exposed for work with this domain
+
+- LayoutFacadeService
+
+- LinkInterface
+
 ### 2.2 PWA
+
+Everything related to work with PWA. So simple at the moment that is an ideal sample of a library in only one layer.
 
 - PwaService
 
 ### 2.3 Tracker
+
+Domain for being responsible of logs, and analytics.
+
+Uses advanced concepts of dependency injection.
+
+Uses Google Tag Manager transparently if provided with a valid account ID.
 
 - TrackerService
 
@@ -40,12 +74,14 @@
 
 - ErrorHandlerService
 
-- _ErrorInterceptor_
+- _ErrorInterceptor, to be done..._
 
 
 ---
 
 ## 3. Tools
+
+A bunch of modern tools ready to be used
 
 ### 3.1 e2e testing
 
@@ -75,6 +111,8 @@
 
 ## 4 Patterns and techniques
 
+Last but no least: the most important decisions has been taken into account.
+
 ### 4.1 Smart Container / dumb presenters
 
 ### 4.2 OnPush Change detection strategy
@@ -84,3 +122,6 @@
 ### 4.4 Reactive forms
 
 ### 4.5 Services configuration by token injection
+
+> Hope you can use or learn something form this open source work.
+> --Alberto Basalo
