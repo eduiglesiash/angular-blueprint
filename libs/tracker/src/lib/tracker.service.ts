@@ -18,7 +18,12 @@ export class TrackerService {
 }
 
 export class NullTrackerService {
-  constructor() {}
+  constructor() {
+    if (window && window.console) {
+      window.console.log = function() {};
+      window.console.error = function() {};
+    }
+  }
 
   writeError(error: TrackingEntry) {}
 
