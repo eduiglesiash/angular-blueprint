@@ -1,22 +1,22 @@
 [
   {
-    "path": "https://angular.builders",
-    "caption": "Angular.Builders"
+    "path": "https://github.com/angularbuilders/angular-blueprint",
+    "caption": "Angular-Blueprint Code (en)"
   },
   {
-    "path": "https://github.com/angularbuilders/angular-blueprint",
-    "caption": "Angular-Blueprint Code"
+    "path": "https://angular.builders",
+    "caption": "Angular.Builders (es, en)"
   },
   {
     "path": "https://academia-binaria.com/",
-    "caption": "Blog tutorial Academia Binaria"
+    "caption": "Blog tutorial Academia Binaria (es)"
   },
   {
     "path": "https://www.trainingit.es/curso-angular-basico/?promo=angular.builders",
-    "caption": "Curso Online de Angular Básico"
+    "caption": "Curso Online de Angular Básico (es)"
   },
   {
     "path": "https://www.trainingit.es/curso-angular-avanzado/?promo=angular.builders",
-    "caption": "Curso Online de Angular Avanzado"
+    "caption": "Curso Online de Angular Avanzado (es)"
   }
 ]

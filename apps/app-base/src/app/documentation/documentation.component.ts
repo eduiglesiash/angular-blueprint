@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'abs-documentation',
@@ -7,10 +7,22 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DocumentationComponent implements OnInit {
+  documents: any[] = [
+    {
+      path: './assets/architecture.md',
+      caption: 'Architecture'
+    },
+    {
+      path: './assets/ROADMAP.md',
+      caption: 'Roadmap'
+    }
+  ];
+  currentDocument = this.documents[0];
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit() {}
+  selectDocument(document) {
+    console.log({ document });
+    this.currentDocument = document;
   }
-
 }

@@ -2,7 +2,9 @@ import {
   ChangeDetectionStrategy,
   Component,
   Input,
-  OnInit
+  OnChanges,
+  OnInit,
+  SimpleChanges
 } from '@angular/core';
 import { Observable } from 'rxjs';
 import { MarkdownService } from '../markdown.service';
@@ -13,13 +15,22 @@ import { MarkdownService } from '../markdown.service';
   styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class MarkdownViewerComponent implements OnInit {
+export class MarkdownViewerComponent implements OnInit, OnChanges {
   @Input() url: string;
   markdownContent$: Observable<any>;
 
   constructor(private markdownService: MarkdownService) {}
 
   ngOnInit() {
+    this.loadDocument();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log({ changes });
+    this.loadDocument();
+  }
+
+  private loadDocument() {
     this.markdownContent$ = this.markdownService.getMarkdown$(this.url);
   }
 }

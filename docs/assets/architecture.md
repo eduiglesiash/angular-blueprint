@@ -123,5 +123,6 @@ Last but no least: the most important decisions has been taken into account.
 
 ### 4.5 Services configuration by token injection
 
-> Hope you can use or learn something form this open source work.
-> --Alberto Basalo
+> Hope you can use or learn something from this open source work.
+>
+> -- Alberto Basalo

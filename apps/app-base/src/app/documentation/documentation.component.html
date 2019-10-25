@@ -1,2 +1,6 @@
-<angular-blueprint-documents-markdown-viewer url="./assets/architecture.md">
+<nav>
+  <button *ngFor="let document of documents "
+          (click)="selectDocument(document)">{{ document.caption }}</button>
+</nav>
+<angular-blueprint-documents-markdown-viewer [url]="currentDocument.path">
 </angular-blueprint-documents-markdown-viewer>

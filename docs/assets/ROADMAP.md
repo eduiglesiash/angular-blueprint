@@ -1,14 +1,14 @@
 # To Do
 
-
-- Documentation library route with children
-
 - Basic crud sample https://jsonbox.io/
 
-- Interceptors https://next.angular.io/cli/generate#interceptor-command
-
+- Interceptors using https://next.angular.io/cli/generate#interceptor-command
 
 ## _Doing_
+
+- Routes and its metadata better solution
+
+- Documentation library. Routed with children
 
 - REFACTOR: use libraries instead of modules
 

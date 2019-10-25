@@ -24,18 +24,12 @@ const routes: Routes = [
     data: { caption: 'Contact', title: 'Contact us' }
   },
   {
-    path: 'roadmap',
-    loadChildren: () =>
-      import('./roadmap/roadmap.module').then(m => m.RoadmapModule),
-    data: { caption: 'Roadmap', title: 'Feature Roadmap' }
-  },
-  {
     path: 'documentation',
     loadChildren: () =>
       import('./documentation/documentation.module').then(
         m => m.DocumentationModule
       ),
-    data: { caption: 'Documentation', title: 'Architectural Documents' }
+    data: { caption: 'Documentation', title: 'Developer documentation' }
   }
 ];
 
