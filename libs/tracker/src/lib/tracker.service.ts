@@ -5,8 +5,18 @@ export interface TrackingEntry {
   value?: any;
 }
 
-export class TrackerService {
+export abstract class TrackerService {
   constructor() {}
+
+  abstract writeError(error: TrackingEntry);
+
+  abstract writeEvent(event: TrackingEntry);
+}
+
+export class ConsoleService extends TrackerService {
+  constructor() {
+    super();
+  }
 
   writeError(error: TrackingEntry) {
     console.error(error);
@@ -17,8 +27,9 @@ export class TrackerService {
   }
 }
 
-export class NullTrackerService {
+export class NullTrackerService extends TrackerService {
   constructor() {
+    super();
     if (window && window.console) {
       window.console.log = function() {};
       window.console.error = function() {};

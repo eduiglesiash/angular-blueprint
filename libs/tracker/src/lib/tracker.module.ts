@@ -4,7 +4,7 @@ import { ErrorHandlerService } from './error-handler.service';
 import { GtagService } from './gtag.service';
 import { TrackerConfig } from './models/tracker-config.class';
 import { RoutesService } from './routes.service';
-import { NullTrackerService, TrackerService } from './tracker.service';
+import { ConsoleService, NullTrackerService, TrackerService } from './tracker.service';
 
 export function trackerFactory(trackerConfig: TrackerConfig) {
   if (trackerConfig.isProduction) {
@@ -13,7 +13,7 @@ export function trackerFactory(trackerConfig: TrackerConfig) {
     }
     return new NullTrackerService();
   }
-  return new TrackerService();
+  return new ConsoleService();
 }
 
 @NgModule({

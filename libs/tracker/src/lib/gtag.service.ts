@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
 import { TrackerConfig } from './models/tracker-config.class';
-import { TrackingEntry } from './tracker.service';
+import { TrackerService, TrackingEntry } from './tracker.service';
 
 declare var gtag;
 
 @Injectable({
   providedIn: 'root'
 })
-export class GtagService {
+export class GtagService extends TrackerService {
   constructor(trackerConfig: TrackerConfig) {
+    super();
     this.addScriptToDOM(trackerConfig.gTagId);
   }
 
