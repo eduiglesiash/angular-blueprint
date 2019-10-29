@@ -4,7 +4,11 @@ import { ErrorHandlerService } from './error-handler.service';
 import { GtagService } from './gtag.service';
 import { TrackerConfig } from './models/tracker-config.class';
 import { RoutesService } from './routes.service';
-import { ConsoleService, NullTrackerService, TrackerService } from './tracker.service';
+import {
+  ConsoleService,
+  NullTrackerService,
+  TrackerService
+} from './tracker.service';
 
 export function trackerFactory(trackerConfig: TrackerConfig) {
   if (trackerConfig.isProduction) {
@@ -22,9 +26,8 @@ export function trackerFactory(trackerConfig: TrackerConfig) {
 })
 export class TrackerModule {
   // To Do:
-  // config clientSide and production
   // receibe routes in forRoot
-  // load metadata
+  // load route metadata
 
   static forRoot(
     trackerConfig: TrackerConfig

@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DocumentationRoutingModule } from './documentation-routing.module';
 import { DocumentationComponent } from './documentation.component';
+import { DocumentationService } from './documentation.service';
 
 const routes: Routes = [{ path: '', component: DocumentationComponent }];
 
@@ -14,6 +15,7 @@ const routes: Routes = [{ path: '', component: DocumentationComponent }];
     DocumentsModule,
     DocumentationRoutingModule,
     RouterModule.forChild(routes)
-  ]
+  ],
+  providers: [DocumentationService]
 })
 export class DocumentationModule {}

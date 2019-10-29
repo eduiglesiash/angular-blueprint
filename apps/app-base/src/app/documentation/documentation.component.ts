@@ -1,4 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { tap } from 'rxjs/operators';
+import { DocumentationService } from './documentation.service';
 
 @Component({
   selector: 'abs-documentation',
@@ -7,22 +10,16 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DocumentationComponent implements OnInit {
-  documents: any[] = [
-    {
-      path: './assets/architecture.md',
-      caption: 'Architecture'
-    },
-    {
-      path: './assets/ROADMAP.md',
-      caption: 'Roadmap'
-    }
-  ];
-  currentDocument = this.documents[0];
-  constructor() {}
+  documents$: Observable<any[]>;
+  currentDocument;
+  constructor(private documentationService: DocumentationService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.documents$ = this.documentationService
+      .getDocuments$()
+      .pipe(tap(documents => (this.currentDocument = documents[0])));
+  }
   selectDocument(document) {
-    console.log({ document });
     this.currentDocument = document;
   }
 }

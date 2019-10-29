@@ -26,7 +26,6 @@ export class MarkdownViewerComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log({ changes });
     this.loadDocument();
   }
 

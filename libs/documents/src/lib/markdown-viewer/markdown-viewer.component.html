@@ -1,1 +1,4 @@
-<markdown [data]="markdownContent$ | async"></markdown>
+<article *ngIf="markdownContent$ | async as markdownContent; else loading">
+  <markdown [data]="markdownContent"></markdown>
+</article>
+<ng-template #loading>Loading file...</ng-template>
