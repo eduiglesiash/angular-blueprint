@@ -1,5 +1,5 @@
 <div *ngFor="let route of appRoutes">
   <button [routerLink]="'/'+route.path">
-    {{ route.caption }}
+    {{ route.data.caption }}
   </button>
 </div>

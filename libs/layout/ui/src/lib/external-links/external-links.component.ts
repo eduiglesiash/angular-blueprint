@@ -1,4 +1,4 @@
-import { Link } from '@angular-blueprint/layout/domain';
+import { RouteLink } from '@angular-blueprint/blueprint/domain';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -12,7 +12,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ExternalLinksComponent implements OnInit {
-  @Input() externalLinks: Link[];
+  @Input() externalLinks: RouteLink[];
   constructor() {}
 
   ngOnInit() {}

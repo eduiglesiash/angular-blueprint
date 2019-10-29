@@ -31,6 +31,9 @@
     },
     "documents": {
       "tags": []
+    },
+    "blueprint-domain": {
+      "tags": []
     }
   }
 }

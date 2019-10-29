@@ -1,4 +1,5 @@
-import { LayoutFacadeService, Link } from '@angular-blueprint/layout/domain';
+import { RouteLink } from '@angular-blueprint/blueprint/domain';
+import { LayoutFacadeService } from '@angular-blueprint/layout/domain';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -71,8 +72,8 @@ import { Observable } from 'rxjs';
 })
 export class AdminComponent implements OnInit {
   @Input() title = '';
-  appRoutes$: Observable<Link[]>;
-  externalLinks$: Observable<Link[]>;
+  appRoutes$: Observable<RouteLink[]>;
+  externalLinks$: Observable<RouteLink[]>;
 
   constructor(private layoutFacadeService: LayoutFacadeService) {}
 

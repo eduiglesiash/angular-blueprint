@@ -1,21 +1,21 @@
+import { RouteLink } from '@angular-blueprint/blueprint/domain';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-
 @Injectable()
 export class DocumentationService {
-  private documents: any[] = [
+  private documents: RouteLink[] = [
     {
       path: './assets/architecture.md',
-      caption: 'Architecture'
+      data: { caption: 'Architecture' }
     },
     {
       path: './assets/ROADMAP.md',
-      caption: 'Roadmap'
+      data: { caption: 'Roadmap' }
     }
   ];
   constructor() {}
 
-  getDocuments$(): Observable<any[]> {
+  getDocuments$(): Observable<RouteLink[]> {
     return of(this.documents);
   }
 }

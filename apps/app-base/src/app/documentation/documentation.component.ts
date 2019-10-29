@@ -1,8 +1,8 @@
+import { RouteLink } from '@angular-blueprint/blueprint/domain';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { DocumentationService } from './documentation.service';
-
 @Component({
   selector: 'abs-documentation',
   templateUrl: './documentation.component.html',
@@ -10,8 +10,8 @@ import { DocumentationService } from './documentation.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DocumentationComponent implements OnInit {
-  documents$: Observable<any[]>;
-  currentDocument;
+  documents$: Observable<RouteLink[]>;
+  currentDocument: RouteLink;
   constructor(private documentationService: DocumentationService) {}
 
   ngOnInit() {
