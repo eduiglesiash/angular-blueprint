@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1572457876640,
+  "timestamp": 1572458288297,
   "index": "https://angularbuilders.github.io/angular-blueprint/index.html",
   "assetGroups": [
     {
@@ -61,7 +61,7 @@
     "https://angularbuilders.github.io/angular-blueprint/6-es5.5801e0b3fc97dabb5e3b.js": "a96526eef0878a303a5170fd13b94a86831eef4d",
     "https://angularbuilders.github.io/angular-blueprint/assets/ROADMAP.md": "24df7b6b2af1faf7517a98b2456b4020a2c939b0",
     "https://angularbuilders.github.io/angular-blueprint/assets/angular.builders.png": "47c6b8ea65bca8f9db8ae63d9129d6c179f7c2ea",
-    "https://angularbuilders.github.io/angular-blueprint/assets/architecture.md": "07fdd3bfc3533e027c781486cdd347ac60409790",
+    "https://angularbuilders.github.io/angular-blueprint/assets/architecture.md": "9f4df43bf1c8160c5949ae3ebf7ad44e00d6f250",
     "https://angularbuilders.github.io/angular-blueprint/assets/data/app-routes.json": "3c707a8b93216c8681459762c275f321f0a24177",
     "https://angularbuilders.github.io/angular-blueprint/assets/data/external-links.json": "80c443940a00673789d752c125d6beb7cb314ebb",
     "https://angularbuilders.github.io/angular-blueprint/assets/icons/icon-128x128.png": "e15fc6b19be97e0972e4977d64498205b16e3ffc",
