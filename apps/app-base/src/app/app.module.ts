@@ -9,27 +9,23 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { MarkdownModule } from 'ngx-markdown';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
-//import { routes } from './routes';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
-    data: { caption: 'Home', title: 'Blueprint' }
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },
   {
     path: 'contact',
     loadChildren: () =>
-      import('./contact/contact.module').then(m => m.ContactModule),
-    data: { caption: 'Contact', title: 'Contact us' }
+      import('./contact/contact.module').then(m => m.ContactModule)
   },
   {
     path: 'documentation',
     loadChildren: () =>
       import('./documentation/documentation.module').then(
         m => m.DocumentationModule
-      ),
-    data: { caption: 'Documentation', title: 'Developer documentation' }
+      )
   }
 ];
 
@@ -40,6 +36,7 @@ const blueprintImports: any[] = [
   }),
   TrackerModule.forRoot({
     isProduction: environment.production,
+    routes: routes,
     gTagId: environment.gTagId
   })
 ];
@@ -54,7 +51,6 @@ const blueprintImports: any[] = [
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production
     }),
-    LayoutFeatureModule,
     ...blueprintImports
   ],
   providers: [],

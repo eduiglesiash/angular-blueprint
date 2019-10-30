@@ -25,10 +25,6 @@ export function trackerFactory(trackerConfig: TrackerConfig) {
   providers: [{ provide: ErrorHandler, useClass: ErrorHandlerService }]
 })
 export class TrackerModule {
-  // To Do:
-  // receibe routes in forRoot
-  // load route metadata
-
   static forRoot(
     trackerConfig: TrackerConfig
   ): ModuleWithProviders<TrackerModule> {

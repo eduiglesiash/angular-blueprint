@@ -10,24 +10,36 @@ declare var gtag;
 export class GtagService extends TrackerService {
   constructor(trackerConfig: TrackerConfig) {
     super();
-    this.addScriptToDOM(trackerConfig.gTagId);
+    this.addScriptsToDOM(trackerConfig.gTagId);
   }
 
-  private addScriptToDOM(gTagId: string) {
+  private addScriptsToDOM(gTagId: string) {
+    this.addRemoteScript(gTagId);
+    this.addLocalScript(gTagId);
+  }
+
+  private addRemoteScript(gTagId: string) {
     const remoteScript = document.createElement('script');
     remoteScript.type = 'text/javascript';
     remoteScript.async = true;
     remoteScript.src = `https://www.googletagmanager.com/gtag/js?id=${gTagId}`;
     document.head.appendChild(remoteScript);
+  }
+
+  private addLocalScript(gTagId: string) {
     const localScript = document.createElement('script');
     localScript.type = 'text/javascript';
-    localScript.textContent = `
+    localScript.textContent = this.getGtagScript(gTagId);
+    document.head.appendChild(localScript);
+  }
+
+  private getGtagScript(gTagId: string): string {
+    return `
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push( arguments ); }
     window.gtag = gtag;
     gtag( 'js', new Date() );
     gtag( 'config', '${gTagId}', { 'send_page_view': false } );`;
-    document.head.appendChild(localScript);
   }
 
   writeError(error: TrackingEntry) {
@@ -42,19 +54,27 @@ export class GtagService extends TrackerService {
   writeEvent(event: TrackingEntry) {
     let metric: any;
     if (event.type === 'page_view') {
-      metric = {
-        page_title: event.origin,
-        page_path: event.message,
-        value: event.value
-      };
+      metric = this.getPageViewMetric(event);
     } else {
-      metric = {
-        event_category: event.origin,
-        event_label: event.message,
-        value: event.value
-      };
+      metric = this.getStandarMetric(event);
     }
     this.sendHit(event.type, metric);
+  }
+
+  private getStandarMetric(event: TrackingEntry): any {
+    return {
+      event_category: event.origin,
+      event_label: event.message,
+      value: event.value
+    };
+  }
+
+  private getPageViewMetric(event: TrackingEntry): any {
+    return {
+      page_title: event.origin,
+      page_path: event.message,
+      value: event.value
+    };
   }
 
   private sendHit(type: string, metric) {
