@@ -6,10 +6,11 @@ Powered by [Nx-dev tools](https://nx.dev/web)
 
 Based on [Enterprise Angular Book](https://leanpub.com/enterprise-angular) by [Manfred Steyer](https://twitter.com/ManfredSteyer)
 
-- [1. Projects](documentation/#1-projects)
-- [2. Libraries](documentation/#2-libraries)
-- [3. Tools](documentation/#3-tools)
-- [4. Patterns and techniques](documentation/#4-patterns-and-techniques)
+TOC:
+- 1. Projects
+- 2. Libraries
+- 3. Tools
+- 4. Patterns and techniques
 
 ## 1. Projects
 
