@@ -1,14 +1,23 @@
 [
   {
-    "path": "",
-    "caption": "Home"
+    "path": "/",
+    "data": {
+      "caption": "Home",
+      "title": "Blueprint"
+    }
   },
   {
-    "path": "contact",
-    "caption": "Contact"
+    "path": "/contact",
+    "data": {
+      "caption": "Contact",
+      "title": "Contact us"
+    }
   },
   {
-    "path": "documentation",
-    "caption": "Documentation"
+    "path": "/documentation",
+    "data": {
+      "caption": "Documentation",
+      "title": "Developer documentation"
+    }
   }
 ]
