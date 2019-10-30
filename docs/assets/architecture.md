@@ -6,6 +6,11 @@ Powered by [Nx-dev tools](https://nx.dev/web)
 
 Based on [Enterprise Angular Book](https://leanpub.com/enterprise-angular) by [Manfred Steyer](https://twitter.com/ManfredSteyer)
 
+- [1. Projects](/#1-projects)
+- [2. Libraries](/#2-libraries)
+- [3. Tools](/#3-tools)
+- [4. Patterns and techniques](/#4-patterns-and-techniques)
+
 ## 1. Projects
 
 ### 1.1 App Base
@@ -76,6 +81,13 @@ Uses Google Tag Manager transparently if provided with a valid account ID.
 
 - _ErrorInterceptor, to be done..._
 
+### 2.4 Documents
+
+Imports [ngx-markdown](https://github.com/jfcere/ngx-markdown) and hides its internal to the application.
+
+### 2.3 Blueprint
+
+Is a vanilla TypeScript library intended to provide models, interfaces and basic utilities for all the other libraries.
 
 ---
 
@@ -115,13 +127,23 @@ Last but no least: the most important decisions has been taken into account.
 
 ### 4.1 Smart Container / dumb presenters
 
+For better reuse of ui components and sharing of responsibilities.
+
 ### 4.2 OnPush Change detection strategy
+
+For better change detection performance.
 
 ### 4.3 Simple Observable Store
 
+For communicate between non related components.
+
 ### 4.4 Reactive forms
 
+For better validation and control over the changes on data and form itself.
+
 ### 4.5 Services configuration by token injection
+
+For custom functionality with out need of code changes.
 
 > Hope you can use or learn something from this open source work.
 >
