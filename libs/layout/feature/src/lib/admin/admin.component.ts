@@ -1,5 +1,5 @@
-import { RouteLink } from '@angular-blueprint/blueprint/domain';
-import { LayoutFacadeService } from '@angular-blueprint/layout/domain';
+import { RouteLink } from '@a-blue/blueprint/domain';
+import { LayoutFacadeService } from '@a-blue/layout/domain';
 import {
   ChangeDetectionStrategy,
   Component,

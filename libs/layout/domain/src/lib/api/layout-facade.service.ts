@@ -1,4 +1,4 @@
-import { RouteLink } from '@angular-blueprint/blueprint/domain';
+import { RouteLink } from '@a-blue/blueprint/domain';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 

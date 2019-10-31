@@ -1,6 +1,6 @@
-import { LayoutFeatureModule } from '@angular-blueprint/layout/feature';
-import { PwaModule } from '@angular-blueprint/pwa';
-import { TrackerModule } from '@angular-blueprint/tracker';
+import { LayoutFeatureModule } from '@a-blue/layout/feature';
+import { PwaModule } from '@a-blue/pwa';
+import { TrackerModule } from '@a-blue/tracker';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';

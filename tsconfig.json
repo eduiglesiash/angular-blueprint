@@ -16,15 +16,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-blueprint/layout/ui": ["libs/layout/ui/src/index.ts"],
-      "@angular-blueprint/layout/domain": ["libs/layout/domain/src/index.ts"],
-      "@angular-blueprint/layout/feature": ["libs/layout/feature/src/index.ts"],
-      "@angular-blueprint/pwa": ["libs/pwa/src/index.ts"],
-      "@angular-blueprint/tracker": ["libs/tracker/src/index.ts"],
-      "@angular-blueprint/documents": ["libs/documents/src/index.ts"],
-      "@angular-blueprint/blueprint/domain": [
-        "libs/blueprint/domain/src/index.ts"
-      ]
+      "@a-blue/layout/ui": ["libs/layout/ui/src/index.ts"],
+      "@a-blue/layout/domain": ["libs/layout/domain/src/index.ts"],
+      "@a-blue/layout/feature": ["libs/layout/feature/src/index.ts"],
+      "@a-blue/pwa": ["libs/pwa/src/index.ts"],
+      "@a-blue/tracker": ["libs/tracker/src/index.ts"],
+      "@a-blue/documents": ["libs/documents/src/index.ts"],
+      "@a-blue/blueprint/domain": ["libs/blueprint/domain/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

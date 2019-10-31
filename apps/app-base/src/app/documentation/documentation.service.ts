@@ -1,4 +1,4 @@
-import { RouteLink } from '@angular-blueprint/blueprint/domain';
+import { RouteLink } from '@a-blue/blueprint/domain';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 @Injectable()

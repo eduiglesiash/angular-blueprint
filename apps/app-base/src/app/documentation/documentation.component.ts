@@ -1,4 +1,4 @@
-import { RouteLink } from '@angular-blueprint/blueprint/domain';
+import { RouteLink } from '@a-blue/blueprint/domain';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
