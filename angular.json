@@ -163,7 +163,7 @@
       "projectType": "library",
       "root": "libs/layout/domain",
       "sourceRoot": "libs/layout/domain/src",
-      "prefix": "angular-blueprint",
+      "prefix": "a-blue",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -190,7 +190,7 @@
       "projectType": "library",
       "root": "libs/layout/feature",
       "sourceRoot": "libs/layout/feature/src",
-      "prefix": "layout-feature",
+      "prefix": "a-blue-layout",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -244,7 +244,7 @@
       "projectType": "library",
       "root": "libs/tracker",
       "sourceRoot": "libs/tracker/src",
-      "prefix": "angular-blueprint",
+      "prefix": "a-blue",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -271,7 +271,7 @@
       "projectType": "library",
       "root": "libs/documents",
       "sourceRoot": "libs/documents/src",
-      "prefix": "angular-blueprint-documents",
+      "prefix": "a-blue-documents",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",

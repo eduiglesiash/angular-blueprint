@@ -3,6 +3,6 @@
     <button *ngFor="let document of documents "
             (click)="selectDocument(document)">{{ document.data.caption }}</button>
   </nav>
-  <angular-blueprint-documents-markdown-viewer [url]="currentDocument.path">
-  </angular-blueprint-documents-markdown-viewer>
+  <a-blue-documents-markdown-viewer [url]="currentDocument.path">
+  </a-blue-documents-markdown-viewer>
 </div>

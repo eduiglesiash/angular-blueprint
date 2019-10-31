@@ -1,17 +1,7 @@
 {
   "extends": "../../tslint.json",
   "rules": {
-    "directive-selector": [
-      true,
-      "attribute",
-      "angularBlueprintDocuments",
-      "camelCase"
-    ],
-    "component-selector": [
-      true,
-      "element",
-      "angular-blueprint-documents",
-      "kebab-case"
-    ]
+    "directive-selector": [true, "attribute", "aBlueDocuments", "camelCase"],
+    "component-selector": [true, "element", "a-blue-documents", "kebab-case"]
   }
 }

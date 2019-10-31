@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 import { MarkdownService } from '../markdown.service';
 
 @Component({
-  selector: 'angular-blueprint-documents-markdown-viewer',
+  selector: 'a-blue-documents-markdown-viewer',
   templateUrl: './markdown-viewer.component.html',
   styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush
