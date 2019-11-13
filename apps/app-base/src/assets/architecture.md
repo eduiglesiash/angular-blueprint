@@ -120,6 +120,9 @@ A bunch of modern tools ready to be used
 
 - https://www.npmjs.com/package/angular-oauth2-oidc
 
+### 3.7 CSS Grid
+
+- https://stackblitz.com/edit/host-binding-and-css-grid
 ---
 
 ## 4 Patterns and techniques
